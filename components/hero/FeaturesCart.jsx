@@ -23,18 +23,20 @@ const features = [
 
 const FeaturesCart = () => {
   return (
-    <section className="w-full bg-[#060606] text-white md:px-4 px-3 md:py-20">
+    <section className="w-full bg-[#060606] text-white md:px-4 px-3 md:py-24">
       <div className="md:max-w-6xl max-w-7xl mx-auto text-center mb-6 md:mb-12">
         <h2 className="text-2xl md:text-4xl font-medium md:mb-4 mb-2 text-transparent bg-clip-text bg-gradient-to-r to-[#B462CE] from-[#3F2AB2]">
-          What is  <span className=" font-normal text-white">{" "}Convoze?</span>
+          What is <span className=" font-normal text-white"> Convoze?</span>
         </h2>
         <p className="text-gray-300 font-light text-base md:text-xl max-w-3xl mx-auto mb-3 md:mb-6">
-          Your AI Assistant for <br className="md:hidden block"/> Every Customer Conversation
+          Your AI Assistant for <br className="md:hidden block" /> Every
+          Customer Conversation
         </p>
         <p className="text-gray-400 font-light text-sm md:text-base md:max-w-6xl max-w-7xl mx-auto">
-          Convoze is an AI-powered voice intelligence platform that helps you monitor,
-          understand, and act on every one of your customers' calls — instantly and at scale.
-          It’s not just another QA tool. It’s your real-time co-pilot for quality, compliance & performance.
+          Convoze is an AI-powered voice intelligence platform that helps you
+          monitor, understand, and act on every one of your customers' calls —
+          instantly and at scale. It’s not just another QA tool. It’s your
+          real-time co-pilot for quality, compliance & performance.
         </p>
       </div>
 

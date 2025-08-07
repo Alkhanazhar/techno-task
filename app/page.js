@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Container from "@/components/container";
 import BookDemo from "@/components/hero/BookDemo";
@@ -42,10 +42,14 @@ export default function Home() {
     };
   }, []);
 
-
   return (
-    <motion.div ref={lenisRef} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
-        <Hero />
+    <motion.div
+      ref={lenisRef}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+    >
+      <Hero />
 
       {/* <Customers/> */}
       {/* <Container className={" justify-between"}>
@@ -55,62 +59,33 @@ export default function Home() {
 
       <WhyConvoze />
       <Container className={" justify-between"}>
-
         <FeaturesCart />
-
       </Container>
       {/* <Timelinecomp/> */}
 
       <TimelineJourney />
 
-
-      <Container className={" justify-between"}>
-
-        <SolutionCarts />
-
-
-
-      </Container>
+      {/* <Container className={" justify-between"}> */}
+      <SolutionCarts />
+      {/* </Container> */}
 
       <WhyTrustUs />
 
-
-
-
+      {/* <Container className={" justify-between"}> */}
+      <Industries />
+      {/* </Container> */}
       <Container className={" justify-between"}>
-
-        <Industries />
-
-
-
-
-      </Container>
-      <Container className={" justify-between"}>
-
         <WhatCustomerSays />
-
-
-
+      </Container>
+      {/* <Container className={" justify-between"}> */}
+      <BookDemo />
+      {/* </Container> */}
+      <Container className={" justify-between"}>
+        <ContactUs isCards={false} />
       </Container>
       <Container className={" justify-between"}>
-
-        <BookDemo />
-
-
-
-      </Container>
-      <Container className={" justify-between"}>
-
         <Faq />
-
-
       </Container>
-      <Container className={" justify-between"}>
-
-
-<ContactUs />
-</Container>
-
     </motion.div>
   );
 }

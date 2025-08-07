@@ -32,15 +32,14 @@ export default function WhatCustomerSays() {
   }, []);
 
   return (
-    <section className="bg-[#060606] text-white md:px-8 px-3 py-4 pb-8">
+    <section className="bg-[#060606] text-white md:px-8 px-3 py-24">
       <div className="max-w-7xl mx-auto space-y-10">
         {/* Heading */}
         <h2 className="text-center text-2xl md:text-4xl font-light leading-tight">
           What Our{" "}
           <span className="font-semibold bg-gradient-to-r to-[#B462CE] from-[#3F2AB2] text-transparent bg-clip-text">
             Customers are Saying
-          </span> 
-          
+          </span>
         </h2>
 
         {/* Main Card */}
@@ -59,18 +58,22 @@ export default function WhatCustomerSays() {
             </p>
             <div className="flex gap-10">
               <div>
-                <h4 className="text-purple-500 md:text-2xl text-xl font-bold">200+</h4>
+                <h4 className="text-purple-500 md:text-2xl text-xl font-bold">
+                  200+
+                </h4>
                 <p className="text-sm text-white mt-1">Projects Successfully</p>
               </div>
               <div>
-                <h4 className="text-purple-500 md:text-2xl text-xl font-bold">600+</h4>
+                <h4 className="text-purple-500 md:text-2xl text-xl font-bold">
+                  600+
+                </h4>
                 <p className="text-sm text-white mt-1">Projects Successfully</p>
               </div>
             </div>
           </div>
 
           {/* Testimonial Card */}
-          <div className="relative w-full max-w-lg md:h-[65vh] h-[44vh] z-10">
+          <div className="relative w-full max-w-lg py-10 z-10">
             <AnimatePresence mode="wait">
               <motion.div
                 key={index}
@@ -78,7 +81,7 @@ export default function WhatCustomerSays() {
                 animate={{ opacity: 0.8, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.5 }}
-                className="bg-gradient-to-br from-[#3F2AB2] md:ml-10 ml-0  via-[#9333ea] to-[#B462CE]  text-white p-6 rounded-xl max-w-sm z-10 shadow-xl"
+                className="bg-gradient-to-br from-[#3F2AB2] md:ml-10 ml-0   via-[#9333ea] to-[#B462CE]  text-white p-6 rounded-xl max-w-sm z-10 shadow-xl"
               >
                 <div className="flex items-center mb-4 gap-3">
                   <img
@@ -87,10 +90,14 @@ export default function WhatCustomerSays() {
                     className="w-10 h-10 rounded-full object-cover"
                   />
                   <div>
-                    <h5 className="font-semibold">{testimonials[index].name}</h5>
+                    <h5 className="font-semibold">
+                      {testimonials[index].name}
+                    </h5>
                     <p className="text-sm">{testimonials[index].company}</p>
                   </div>
-                  <span className="ml-auto text-lg font-bold"><QuoteIcon/></span>
+                  <span className="ml-auto text-lg font-bold">
+                    <QuoteIcon />
+                  </span>
                 </div>
                 <p className="text-sm mt-6 leading-relaxed">
                   "{testimonials[index].quote}"
@@ -108,4 +115,3 @@ export default function WhatCustomerSays() {
     </section>
   );
 }
-

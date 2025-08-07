@@ -101,7 +101,7 @@ const WhyConvoze = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20  relative w-full bg-slate-200 text-black overflow-hidden">
+    <div className="min-h-screen py-24  relative w-full bg-slate-200 text-black overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -114,16 +114,17 @@ const WhyConvoze = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 pt-6 lg:pt-8">
         {/* Header Section */}
         <div
-          className={`text-center z-5 md:mb-10 mb-6 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+          className={`text-center z-5 md:mb-10 mb-6 transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
         >
           <h1 className="text-2xl lg:text-4xl font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r to-[#B462CE] from-[#3F2AB2]">
             Why
             <span className="font-normal text-black"> Convoze?</span>
           </h1>
           <p className="text-gray-800 mb-6">
-            In traditional contact center setups, 95% of Conversations Are Wasted.
-            Less than 5% of customer calls are reviewed
+            In traditional contact center setups, 95% of Conversations Are
+            Wasted. Less than 5% of customer calls are reviewed
           </p>
         </div>
 
@@ -145,8 +146,6 @@ Less than 5% of customer calls are reviewed
                 Learn more <ArrowRight className="ml-2 w-4 h-4" />
               </button>
             </div> */}
-
-
 
             {/* Wasted Stats */}
             <div className="space-y-5 p-2 bg-neutral-100 rounded-xl shadow-2xl relative z-10">
@@ -182,7 +181,6 @@ Less than 5% of customer calls are reviewed
 
           {/* Right Column - Problems */}
           <div className="lg:w-1/2 relaive ">
-
             {/* Sales Data Section */}
             {/* <div className="mb-4">
               <h3 className="text-lg font-medium text-white mb-4">Sales Objections</h3>
@@ -210,9 +208,10 @@ Less than 5% of customer calls are reviewed
                     <div
                       key={index}
                       className={`group transition-all duration-500 cursor-pointer
-                        ${isVisible
-                          ? "opacity-100 translate-y-0"
-                          : "opacity-0 translate-y-10"
+                        ${
+                          isVisible
+                            ? "opacity-100 translate-y-0"
+                            : "opacity-0 translate-y-10"
                         }
                       `}
                       style={{ transitionDelay: `${problem.delay + 0.5}s` }}
@@ -221,10 +220,11 @@ Less than 5% of customer calls are reviewed
                     >
                       <div
                         className={`p-3 rounded-xl transition-all duration-300 border border-gray-800/50 
-                        ${isHovered
+                        ${
+                          isHovered
                             ? "bg-gray-800/70 scale-[1.02] shadow-lg"
                             : "bg-gray-900/50"
-                          }
+                        }
                       `}
                       >
                         <div className="flex items-start gap-4">
@@ -235,7 +235,9 @@ Less than 5% of customer calls are reviewed
                             <h3 className="text-lg font-semibold text-white mb-1">
                               {problem.title}
                             </h3>
-                            <p className="text-gray-400 text-sm mb-2">{problem.description}</p>
+                            <p className="text-gray-400 text-sm mb-2">
+                              {problem.description}
+                            </p>
                             <div className="text-purple-300 text-sm font-medium">
                               {problem.impact}
                             </div>
@@ -254,7 +256,6 @@ Less than 5% of customer calls are reviewed
                   That's where Convoze steps in.
                 </p>
               </div> */}
-
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ const trustData = [
     description:
       "Industry-grade phrase detection flags high-risk content in real time — not after it’s too late.",
   },
-   {
+  {
     title: "Human Feedback Loop",
     value: "95%",
     subtitle: "Client Satisfaction Rate",
@@ -33,10 +33,10 @@ const trustData = [
 
 export default function WhyTrustUs() {
   return (
-    <section className="bg-[#060606] md:-mt-0 -mt-16 md:pb-10 text-white px-4 pb-6">
+    <section className="bg-gray-50 md:-mt-0 -mt-16 md:py-20 text-black px-4 py-6">
       <div className="max-w-6xl mx-auto text-center mb-6 md:mb-12">
         <h2 className="text-2xl md:text-4xl font-light">
-          Engineered for {" "}
+          Engineered for{" "}
           <span className="font-semibold bg-gradient-to-r to-[#B462CE] from-[#3F2AB2] text-transparent bg-clip-text">
             Impact
           </span>
