@@ -36,7 +36,7 @@ export function Industries() {
     },
   ];
   return (
-    <div className="relative overflow-hidden w-full h-full pt-6 py-24">
+    <div className="relative overflow-hidden w-full h-full  py-24">
       <div className="text-center mb-5 md:mb-6">
         <h2 className="text-2xl md:text-4xl font-medium md:mb-4 mb-2 text-transparent bg-clip-text bg-gradient-to-r to-[#B462CE] from-[#3F2AB2]">
           Who <span className=" font-normal text-white"> It's For</span>

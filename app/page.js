@@ -61,7 +61,7 @@ export default function Home() {
       <Container className={" justify-between"}>
         <FeaturesCart />
       </Container>
-      {/* <Timelinecomp/> */}
+      {/* <Timelinecomp /> */}
 
       <TimelineJourney />
 

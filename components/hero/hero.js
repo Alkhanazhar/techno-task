@@ -32,19 +32,19 @@ const Hero = () => {
     },
   ];
 
-  // useEffect(() => {
-  //   if (videoRef.current) {
-  //     videoRef.current.playbackRate = 0.75; // Adjust the speed here (0.5 = half speed, 2 = double speed)
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.75; // Adjust the speed here (0.5 = half speed, 2 = double speed)
+    }
+  }, []);
 
   return (
-    <div className="relative md:mt-0 -mt-10 py-24">
+    <div className="relative -mt-12 ">
       {/* Top gradient (light to transparent) */}
       <div className="absolute top-0 inset-x-0 h-24 bg-gradient-to-b from-[#060606] to-transparent z-10 pointer-events-none" />
 
       {/* Bottom gradient (light to transparent) */}
-      <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-[#060606] to-transparent z-10 pointer-events-none" />
+      {/* <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-[#060606] to-transparent z-10 pointer-events-none" /> */}
 
       {/* Grid Background */}
       <div
@@ -55,24 +55,9 @@ const Hero = () => {
       />
 
       {/* Half Circle Overlay with mask */}
-      <div
-        className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[350px] w-full flex justify-center overflow-hidden pointer-events-none"
-        style={{
-          maskImage: "linear-gradient(to top, white, transparent)",
-          WebkitMaskImage: "linear-gradient(to top, white, transparent)",
-          maskSize: "100% 100%",
-          WebkitMaskSize: "100% 100%",
-        }}
-      >
-        {/* <div className="relative w-[700px] h-[700px]">
-          <div className="absolute inset-0 rounded-full border-[20px] border-[#2F2F2F] opacity-5" />
-          <div className="absolute inset-6 rounded-full border-[20px] border-[#2F2F2F] opacity-15" />
-          <div className="absolute inset-0 rounded-full border-[20px] border-[#2F2F2F] opacity-5" />
-        </div> */}
-      </div>
 
       {/* Orb + Hero Content */}
-      <div className="w-full md:h-[580px] h-[420px] md:-mt-6 relative flex items-start justify-between gap-4 ">
+      <div className="w-full  relative flex items-start justify-between gap-4 ">
         {/* Orb */}
 
         {/* Video with Overlay */}
@@ -90,11 +75,11 @@ const Hero = () => {
           </video>
 
           {/* Blur Overlay */}
-          <div className="absolute inset-0 backdrop-brightness-100 bg-black/70 z-10" />
         </div>
+        <div className="absolute inset-0 backdrop-brightness-100 bg-black/70 z-10" />
 
         {/* Text Content */}
-        <div className="absolute z-20 text-center md:mt-0 mt-4 w-full px-2 md:px-7">
+        <div className="absolute z-20 text-center md:mt-16 mt-8 w-full px-2 md:px-7">
           <h1 className="text-lg drop-shadow-2xl md:mt-22 mt-14 md:text-[38px] md:px-0 px-4 font-medium text-white leading-tight">
             97% of customer support conversations{" "}
             <br className="hidden md:block" />{" "}

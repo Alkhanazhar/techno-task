@@ -61,15 +61,15 @@ export default function SolutionCarts() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto md:mt-10 mt-6 flex flex-col md:flex-row md:gap-12 gap-4 items-start">
+      <div className="max-w-6xl mx-auto md:pt-10 pt-6 h-full flex flex-col md:flex-row md:gap-12 gap-4 items-start">
         {/* Left Side - scrollable on mobile */}
-        <div className="space-y-0 md:space-y-6 md:max-w-[16rem] scrollbar-none w-full overflow-x-auto scrollbar-hide flex md:block md:gap-4 gap-2  md:pb-0">
+        <div className="p-2 flex  flex-col justify-between  gap-4 h-[440px]">
           {steps.map((step) => (
             <motion.div
               key={step.id}
               // whileHover={{ scale: 1.03 }}
               onClick={() => setActiveStep(step)}
-              className={`min-w-[130px] md:min-w-0 shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition-all scrollbar-hide duration-300 hover:scale-95 rounded-2xl md:px-5 px-3 md:py-4 py-3 border cursor-pointer  group ${
+              className={`min-w-[130px] md:min-w-0 shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition-all scrollbar-hide duration-300 hover:scale-95 rounded-2xl md:px-5 px-3 md:py-4 py-3  cursor-pointer  group ${
                 activeStep.id === step.id
                   ? "border-purple-600 shadow-2xl bg-purple-600"
                   : "border-zinc-700"
@@ -102,7 +102,6 @@ export default function SolutionCarts() {
             </motion.div>
           ))}
         </div>
-
         {/* Right Side for Desktop Only */}
         <div className="relative w-full flex-1 h-[440px] hidden md:block">
           {steps.map((step) => {
