@@ -94,7 +94,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#060606] text-white overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-tl to-[#21082b] from-[#27022e] text-white overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div

@@ -201,7 +201,7 @@ const TimelineJourney = () => {
             </h2>
           </div>
 
-          <div ref={containerRef} className="relative py-10 pt-20">
+          <div ref={containerRef} className="relative my-20 ">
             {/* Main timeline container */}
             <div className="relative h-[400px]">
               <svg
@@ -252,7 +252,7 @@ const TimelineJourney = () => {
                   style={{
                     strokeDashoffset: useTransform(
                       lineProgress,
-                      [0, 1],
+                      [0.2, 1],
                       [2000, 0]
                     ),
                   }}
@@ -266,7 +266,7 @@ const TimelineJourney = () => {
                   fill="#9333ea"
                   style={{
                     filter: "drop-shadow(0 0 6px rgba(147, 51, 234, 0.8))",
-                    scale: useTransform(scrollYProgress, [0, 1], [1, 1.2]),
+                    scale: useTransform(scrollYProgress, [0.2, 1], [1, 1.2]),
                   }}
                   animate={{
                     scale: isTimelineComplete ? [1.2, 1.4, 1.2] : 1.2,
@@ -285,7 +285,7 @@ const TimelineJourney = () => {
                 {/* Completion celebration effect */}
                 {isTimelineComplete && (
                   <motion.circle
-                    cx={circleRef.current?.getAttribute("cx") || 950}
+                    cx={circleRef.current?.getAttribute("cx") || 900}
                     cy={circleRef.current?.getAttribute("cy") || 200}
                     r="0"
                     fill="rgba(147, 51, 234, 0.3)"
@@ -361,7 +361,7 @@ const TimelineJourney = () => {
                         scale: 0.8,
                       }}
                       animate={{
-                        opacity: isVisible ? 1 : 0,
+                        opacity: isVisible ? 1 : 0.9,
                         y: isVisible ? 0 : index % 2 === 0 ? 20 : -20,
                         scale: isVisible ? 1 : 0.8,
                         filter: isPast

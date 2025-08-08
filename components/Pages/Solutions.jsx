@@ -168,7 +168,7 @@ const Solutions = () => {
   return (
     <div
       ref={lenisRef}
-      className="min-h-screen bg-[#060606] text-white overflow-hidden"
+      className="min-h-screen bg-gradient-to-tl to-[#21082b] from-[#27022e] text-white overflow-hidden"
     >
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
         <div

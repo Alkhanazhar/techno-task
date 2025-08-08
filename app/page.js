@@ -58,9 +58,9 @@ export default function Home() {
       </Container> */}
 
       <WhyConvoze />
-      <Container className={" justify-between"}>
-        <FeaturesCart />
-      </Container>
+      {/* <Container className={" justify-between bg-gradient-to-tl to-[#B462CE] from-[#3F2AB2]"}> */}
+      <FeaturesCart />
+      {/* </Container> */}
       {/* <Timelinecomp /> */}
 
       <TimelineJourney />
@@ -74,18 +74,18 @@ export default function Home() {
       {/* <Container className={" justify-between"}> */}
       <Industries />
       {/* </Container> */}
-      <Container className={" justify-between"}>
-        <WhatCustomerSays />
-      </Container>
+      {/* <Container className={" justify-between"}> */}
+      <WhatCustomerSays />
+      {/* </Container> */}
       {/* <Container className={" justify-between"}> */}
       <BookDemo />
       {/* </Container> */}
-      <Container className={" justify-between"}>
+      {/* <Container className={" justify-between"}> */}
         <ContactUs isCards={false} />
-      </Container>
-      <Container className={" justify-between"}>
+      {/* </Container> */}
+      {/* <Container className={" justify-between"}> */}
         <Faq />
-      </Container>
+      {/* </Container> */}
     </motion.div>
   );
 }

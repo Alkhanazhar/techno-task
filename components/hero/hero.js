@@ -64,7 +64,7 @@ const Hero = () => {
         <div className="relative w-full h-full">
           <video
             ref={videoRef}
-            className="w-full h-full object-cover blur-xs"
+            className="w-full  object-cover  h-[115vh]"
             autoPlay
             muted
             loop
@@ -76,11 +76,11 @@ const Hero = () => {
 
           {/* Blur Overlay */}
         </div>
-        <div className="absolute inset-0 backdrop-brightness-100 bg-black/70 z-10" />
+        <div className="absolute inset-0 backdrop-brightness-100 bg-black/75 z-10" />
 
         {/* Text Content */}
-        <div className="absolute z-20 text-center md:mt-16 mt-8 w-full px-2 md:px-7">
-          <h1 className="text-lg drop-shadow-2xl md:mt-22 mt-14 md:text-[38px] md:px-0 px-4 font-medium text-white leading-tight">
+        <div className="absolute z-20 text-center md:mt-20 mt-8 w-full px-2 md:px-7">
+          <h1 className="text-lg drop-shadow-2xl md:mt-24 mt-12 md:text-[38px] md:px-0 px-4 font-medium text-white leading-tight">
             97% of customer support conversations{" "}
             <br className="hidden md:block" />{" "}
             <span className=" bg-gradient-to-r from-[#B462CE] via-[#c893d8] to-[#3F2AB2] text-transparent bg-clip-text">
@@ -89,14 +89,14 @@ const Hero = () => {
             Only 3% get reviewed
           </h1>
 
-          <p className="text-gray-200 text-xs md:text-[16px] mt-6 font-normal max-w-[650px] mx-auto">
+          <p className="text-gray-200 text-xs md:text-[16px] mt-8 font-normal max-w-[650px] mx-auto">
             Convoze AI analyses 100% of calls, flags compliance risks & delivers
             actionable insights to CX, QA & compliance teams reducing churn,
             cutting review time <br className="md:block hidden" /> & driving
             smarter decisions in real time.
           </p>
 
-          <div className="md:mt-4 mt-4 font-light md:text-[15px] text-xs flex flex-row justify-center items-center gap-2 md:gap-4">
+          <div className="md:mt-4 mt-6 font-light md:text-[15px] text-xs flex flex-row justify-center items-center gap-2 md:gap-4">
             <button className="bg-white cursor-pointer text-purple-800 border md:border-none border-purple-500 md:px-3.5 px-3 md:py-2.5 py-2 rounded-full font-medium hover:bg-black hover:text-white transition-all duration-300">
               Book a Demo
             </button>

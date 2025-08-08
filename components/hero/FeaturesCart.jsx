@@ -23,7 +23,7 @@ const features = [
 
 const FeaturesCart = () => {
   return (
-    <section className="w-full bg-[#060606] text-white md:px-4 px-3 md:py-24">
+    <section className="w-full  text-white md:px-4 px-3 md:py-24 bg-gradient-to-tl to-[#21082b] from-[#27022e]">
       <div className="md:max-w-6xl max-w-7xl mx-auto text-center mb-6 md:mb-12">
         <h2 className="text-2xl md:text-4xl font-medium md:mb-4 mb-2 text-transparent bg-clip-text bg-gradient-to-r to-[#B462CE] from-[#3F2AB2]">
           What is <span className=" font-normal text-white"> Convoze?</span>
@@ -66,11 +66,8 @@ const FeaturesCart = () => {
           <motion.div
             key={idx}
             whileHover={{ scale: 1.03 }}
-            className="rounded-2xl p-6 min-h-[180px] relative text-left border border-gray-800 transition duration-300 hover:shadow-[0_0_30px_#9333ea]/20"
-            style={{
-              background:
-                "radial-gradient(circle at top left, rgba(91,33,182,0.3), rgba(20,20,20,0.9))",
-            }}
+            className="rounded-2xl p-6 min-h-[180px] bg-gradient-to-br  to-[#371d3e] from-[#3F2AB2]  relative text-left border border-gray-800 transition duration-300 hover:shadow-[0_0_30px_#9333ea]/20"
+           
           >
             <h3 className="text-white font-semibold text-[16px] mb-2">
               {item.title}

@@ -35,7 +35,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="bg-[#060606] md:py-8 py-6 px-4 md:px-8">
+    <section className="bg-gradient-to-tl to-[#21082b] from-[#27022e] md:py-8 py-6 px-4 md:px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 md:gap-20 items-start">
         {/* Left Column */}
         <div className="md:w-1/2 md:space-y-6 space-y-2">

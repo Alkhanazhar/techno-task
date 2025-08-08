@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${sora.variable} w-full antialiased bg-[#060606]`}
+        className={`${sora.variable} w-full antialiased bg-gradient-to-tl to-[#21082b] from-[#27022e]`}
       >
         <Navbar/>
         {children}

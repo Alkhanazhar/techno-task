@@ -180,7 +180,7 @@ Less than 5% of customer calls are reviewed
           </div>
 
           {/* Right Column - Problems */}
-          <div className="lg:w-1/2 relaive ">
+          <div className="lg:w-1/2 relaive rounded-xl shadow-2xl  backdrop-blur backdrop:opacity-50 bg-gradient-to-tl to-[#B462CE] from-[#3F2AB2] ">
             {/* Sales Data Section */}
             {/* <div className="mb-4">
               <h3 className="text-lg font-medium text-white mb-4">Sales Objections</h3>
@@ -194,7 +194,7 @@ Less than 5% of customer calls are reviewed
               </div>
             </div> */}
 
-            <div className="bg-gradient-to-br from-purple-900/70 shadow-2xl to-indigo-900/70 backdrop-blur backdrop:opacity-50  p-4 rounded-2xl">
+            <div className="  p-4 rounded-2xl">
               <h2 className="text-2xl font-medium text-white mb-6">
                 This isn't just inefficient — it's expensive
               </h2>
@@ -207,7 +207,7 @@ Less than 5% of customer calls are reviewed
                   return (
                     <div
                       key={index}
-                      className={`group transition-all duration-500 cursor-pointer
+                      className={`group transition-all  duration-500 cursor-pointer
                         ${
                           isVisible
                             ? "opacity-100 translate-y-0"
@@ -219,11 +219,11 @@ Less than 5% of customer calls are reviewed
                       onMouseLeave={() => setHoveredProblem(null)}
                     >
                       <div
-                        className={`p-3 rounded-xl transition-all duration-300 border border-gray-800/50 
+                        className={`p-3 rounded-xl transition-all bg-gradient-to-br  to-[#371d3e] from-[#3F2AB2]  duration-300 border border-gray-800/50 
                         ${
                           isHovered
-                            ? "bg-gray-800/70 scale-[1.02] shadow-lg"
-                            : "bg-gray-900/50"
+                            ? "scale-[1.02] shadow-lg"
+                            : ""
                         }
                       `}
                       >
@@ -235,10 +235,10 @@ Less than 5% of customer calls are reviewed
                             <h3 className="text-lg font-semibold text-white mb-1">
                               {problem.title}
                             </h3>
-                            <p className="text-gray-400 text-sm mb-2">
+                            <p className="text-gray-300 text-sm mb-2">
                               {problem.description}
                             </p>
-                            <div className="text-purple-300 text-sm font-medium">
+                            <div className="text-purple-200 text-sm font-medium">
                               {problem.impact}
                             </div>
                           </div>

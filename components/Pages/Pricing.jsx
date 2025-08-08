@@ -112,7 +112,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#060606] text-white py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-tl to-[#21082b] from-[#27022e] text-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div

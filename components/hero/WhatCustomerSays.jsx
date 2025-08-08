@@ -32,7 +32,7 @@ export default function WhatCustomerSays() {
   }, []);
 
   return (
-    <section className="bg-[#060606] text-white md:px-8 px-3 py-24">
+    <section className="bg-gradient-to-tl to-[#21082b] from-[#27022e] text-white md:px-8 px-3 py-24">
       <div className="max-w-7xl mx-auto space-y-10">
         {/* Heading */}
         <h2 className="text-center text-2xl md:text-4xl font-light leading-tight">
